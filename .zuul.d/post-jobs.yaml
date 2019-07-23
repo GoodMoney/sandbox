@@ -1,12 +1,13 @@
 - job:
     name: sandbox-post
+    parent: gm-base
     branches: .*
     files:
       - '^README.*$'
     run: sandbox.yaml
     post-run: post.yaml
     secrets:
-      - sandbox-slack
+      - sandboxslack
     vars:
       slack_notify_channels:
         - '#zuul'

@@ -2,9 +2,12 @@
     check:
       jobs:
         - noop
+        - sandbox-check
     gate:
       jobs:
         - noop
+        - sandbox-gate
+        - matt-check
     post:
       jobs:
         - sandbox-post
