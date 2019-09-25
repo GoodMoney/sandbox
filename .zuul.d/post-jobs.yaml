@@ -14,7 +14,7 @@
     nodeset:
       nodes:
         - name: builder
-          label: ubuntu1804
+          label: ubuntu1804-packer
 
 # This runs on the prod branch only to push the code to prod
 - job:

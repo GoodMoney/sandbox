@@ -5,7 +5,7 @@
     nodeset:
       nodes:
         - name: builder
-          label: ubuntu1804
+          label: ubuntu1804-packer
 
 - job:
     name: sandbox-gate
@@ -14,7 +14,7 @@
     nodeset:
       nodes:
         - name: builder
-          label: ubuntu1804
+          label: ubuntu1804-packer
     secrets:
       - secret: seecreht-tree
         name: boom
@@ -26,4 +26,4 @@
     nodeset:
       nodes:
         - name: builder
-          label: ubuntu1804
+          label: ubuntu1804-packer
